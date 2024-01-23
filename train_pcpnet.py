@@ -32,7 +32,7 @@ def parse_arguments():
     parser.add_argument('--gpu_idx', type=int, default=0, help='set < 0 to use CPU')
 
     # training parameters
-    parser.add_argument('--nepoch', type=int, default=2000, help='number of epochs to train for')
+    parser.add_argument('--nepoch', type=int, default=1000, help='number of epochs to train for')
     parser.add_argument('--batchSize', type=int, default=64, help='input batch size')
     parser.add_argument('--patch_radius', type=float, default=[0.05], nargs='+', help='patch radius in multiples of the shape\'s bounding box diagonal, multiple values for multi-scale.')
     parser.add_argument('--patch_center', type=str, default='point', help='center patch at...\n'
